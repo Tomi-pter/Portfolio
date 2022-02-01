@@ -29,7 +29,7 @@ const Heading2 = styled.h2`
   }
 `;
 const SkillsSect = styled.section`
-  padding: 0 1rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   font-family: "BJSB";
   display: grid;
@@ -103,3 +103,4 @@ function Skills() {
 }
 
 export default Skills;
+export { Heading2 };

@@ -1,0 +1,20 @@
+#F68DAD
+#1A1A1D
+#edc7b7
+#003470
+#5CDB95
+#0A192F
+#89AEE6
+#FBEEC1
+
+<section>
+        <a href="https://github.com/Tomi-pter">
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <a href="https://www.frontendmentor.io/profile/Tomi-pter">
+          <img src={fem} alt="frontendmentor-profile" />
+        </a>
+        <a href="https://icons8.com/icon/Zmq8UwmfMf8B/linkedin">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+      </section>
