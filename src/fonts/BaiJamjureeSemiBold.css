@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BaiJamjureeSemiBold';
+    src: url('fonts/BaiJamjureeSemiBold.eot');
+    src: url('fonts/BaiJamjureeSemiBold.eot') format('embedded-opentype'),
+         url('fonts/BaiJamjureeSemiBold.woff2') format('woff2'),
+         url('fonts/BaiJamjureeSemiBold.woff') format('woff'),
+         url('fonts/BaiJamjureeSemiBold.ttf') format('truetype'),
+         url('fonts/BaiJamjureeSemiBold.svg#BaiJamjureeSemiBold') format('svg');
+}

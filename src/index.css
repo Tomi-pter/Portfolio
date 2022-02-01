@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'BJR';
+    src: url('fonts/BaiJamjureeRegular.eot');
+    src: url('fonts/BaiJamjureeRegular.eot') format('embedded-opentype'), url('fonts/BaiJamjureeRegular.woff2') format('woff2'), url('fonts/BaiJamjureeRegular.woff') format('woff'), url('fonts/BaiJamjureeRegular.ttf') format('truetype'), url('fonts/BaiJamjureeRegular.svg#BaiJamjureeRegular') format('svg');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'BJB';
+    src: url('fonts/BaiJamjureeBold.eot');
+    src: url('fonts/BaiJamjureeBold.eot') format('embedded-opentype'), url('fonts/BaiJamjureeBold.woff2') format('woff2'), url('fonts/BaiJamjureeBold.woff') format('woff'), url('fonts/BaiJamjureeBold.ttf') format('truetype'), url('fonts/BaiJamjureeBold.svg#BaiJamjureeBold') format('svg');
+}
+
+@font-face {
+    font-family: 'BJSB';
+    src: url('fonts/BaiJamjureeSemiBold.eot');
+    src: url('fonts/BaiJamjureeSemiBold.eot') format('embedded-opentype'), url('fonts/BaiJamjureeSemiBold.woff2') format('woff2'), url('fonts/BaiJamjureeSemiBold.woff') format('woff'), url('fonts/BaiJamjureeSemiBold.ttf') format('truetype'), url('fonts/BaiJamjureeSemiBold.svg#BaiJamjureeSemiBold') format('svg');
+}
+
+:root {
+    --text-blue: #89AEE6;
+    --pink: #F68DAD;
+    --linear-gradient: linear-gradient(0.25turn, #0A192F, #1f1f1f);
+    --yellow: #FBEEC1;
+    --brown: #edc7b7;
+    --dark-blue: #003470;
+    --green: #5CDB95;
+    --lime: #85CDCA;
+    --p-blue: #9EB5C7;
+}
+
+body {
+    background: var(--linear-gradient);
+    color: var(--text-blue);
+    margin: 0;
 }

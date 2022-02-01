@@ -1,0 +1,105 @@
+import styled from "styled-components/macro";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
+import { faCss3 } from "@fortawesome/free-brands-svg-icons";
+import { faJs } from "@fortawesome/free-brands-svg-icons";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { TailwindCss } from "@styled-icons/boxicons-logos/TailwindCss";
+import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents";
+import { Redux } from "@styled-icons/boxicons-logos/Redux";
+import { Typescript } from "@styled-icons/simple-icons/Typescript";
+
+const Heading2 = styled.h2`
+  font-size: clamp(26px, 5vw, 32px);
+  font-family: "BJSB";
+  padding: 0 1.5rem;
+  color: var(--p-blue);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+  &::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: var(--p-blue);
+    position: relative;
+    margin-left: 10px;
+  }
+`;
+const SkillsSect = styled.section`
+  padding: 0 1rem;
+  text-align: center;
+  font-family: "BJSB";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+`;
+
+const SkillBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.25);
+  padding: 1rem 1rem 0.5rem;
+
+  && svg {
+    width: 2rem;
+    height: 2rem;
+  }
+`;
+
+function Skills() {
+  return (
+    <>
+      <Heading2>My Stack</Heading2>
+      <SkillsSect>
+        <SkillBox>
+          <FontAwesomeIcon icon={faHtml5} />
+          <p>HTML</p>
+        </SkillBox>
+        <SkillBox>
+          <FontAwesomeIcon icon={faCss3} />
+          <p>CSS</p>
+        </SkillBox>
+        <SkillBox>
+          <FontAwesomeIcon icon={faJs} />
+          <p>JAVASCRIPT</p>
+        </SkillBox>
+        <SkillBox>
+          <FontAwesomeIcon icon={faReact} />
+          <p>REACT.js</p>
+        </SkillBox>
+        <SkillBox>
+          <FontAwesomeIcon icon={faGithub} />
+          <p>GIT/GITHUB</p>
+        </SkillBox>
+        <SkillBox>
+          <TailwindCss />
+          <p>TAILWINDCSS</p>
+        </SkillBox>
+        <SkillBox>
+          <Styledcomponents />
+          <p>STYLED COMPONENTS</p>
+        </SkillBox>
+      </SkillsSect>
+      <Heading2>Currently Learning</Heading2>
+      <SkillsSect>
+        <SkillBox>
+          <Redux />
+          <p>REDUX</p>
+        </SkillBox>
+        <SkillBox>
+          <Typescript />
+          <p>TYPESCRIPT</p>
+        </SkillBox>
+      </SkillsSect>
+    </>
+  );
+}
+
+export default Skills;
