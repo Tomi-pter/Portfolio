@@ -70,6 +70,10 @@ const SkillBox = styled.div`
   box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.25);
   padding: 1rem 1rem 0.5rem;
 
+  p {
+    text-transform: lowercase;
+  }
+
   && svg {
     width: 2rem;
     height: 2rem;

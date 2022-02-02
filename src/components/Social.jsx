@@ -32,6 +32,9 @@ const Socials = styled.footer`
 `;
 
 function Social() {
+  const tagOpen = "<";
+  const tagClose = ">";
+
   return (
     <Socials id="socials">
       <div className="icons">
@@ -55,6 +58,11 @@ function Social() {
         </a>
       </div>
       <p>Designed and Built by Tomi Aiyeniko</p>
+      <p>
+        <span>{tagOpen}</span>
+        TomiPter
+        <span> /{tagClose}</span>
+      </p>
     </Socials>
   );
 }
