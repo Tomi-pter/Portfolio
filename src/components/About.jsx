@@ -1,19 +1,19 @@
 import styled from "styled-components/macro";
 
 const AboutMe = styled.article`
-  text-align: left;
+  text-align: center;
   font-family: "BJR";
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
   padding: 1.5rem 1.5rem;
 
   h1 {
-    font-size: 2em;
+    font-size: clamp(2em, 6vw, 2.6em);
     font-family: "BJB";
     margin: 0.5rem 0;
     color: var(--p-blue);
   }
   h2 {
-    font-size: 1.3rem;
+    font-size: clamp(1.4rem, 5vw, 2.2rem);
     margin-bottom: 0.5rem;
   }
   p {
@@ -36,21 +36,22 @@ const AboutMe = styled.article`
     margin: 0 0.5rem;
     color: var(--text-blue);
   }
+
+  @media screen and (min-width: 745px) {
+    padding: 1.5rem 3rem;
+    text-align: left;
+  }
 `;
 
 function About() {
   return (
-    <AboutMe>
-      <h2>Hi, i'm</h2>
-      <h1>Tomi Aiyeniko👍🏾</h1>
+    <AboutMe id="about">
+      <h2>Hi, my name is</h2>
+      <h1>Tomi Aiyeniko.</h1>
       <h2>I'm a frontend developer.</h2>
       <p>
         I enjoy bringing web designs to life in accessible and responsive ways.
         I love innovation and I always challenge myself to learn and grow.
-      </p>
-      <p>
-        At the moment I freelance on <a href="upwork.com">Upwork</a> and i'm
-        open to collaborations
       </p>
       <p>
         I'm based in Abuja, Nigeria and i'm currently searching for

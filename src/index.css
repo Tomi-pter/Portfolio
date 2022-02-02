@@ -17,7 +17,7 @@
 }
 
 :root {
-    --text-blue: #89AEE6;
+    --text-blue: hsl(216, 65%, 72%);
     --pink: #F68DAD;
     --linear-gradient: linear-gradient(0.25turn, #0A192F, #1f1f1f);
     --yellow: #FBEEC1;
@@ -25,7 +25,7 @@
     --dark-blue: #003470;
     --green: #5CDB95;
     --lime: #85CDCA;
-    --p-blue: #9EB5C7;
+    --p-blue: hsl(206, 69%, 87%);
 }
 
 body {

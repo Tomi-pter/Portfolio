@@ -13,7 +13,7 @@ import { Typescript } from "@styled-icons/simple-icons/Typescript";
 const Heading2 = styled.h2`
   font-size: clamp(26px, 5vw, 32px);
   font-family: "BJSB";
-  padding: 0 1.5rem;
+  padding: 2rem 1.5rem 1rem;
   color: var(--p-blue);
   display: flex;
   align-items: center;
@@ -24,8 +24,26 @@ const Heading2 = styled.h2`
     height: 1px;
     width: 100%;
     background-color: var(--p-blue);
-    position: relative;
     margin-left: 10px;
+    opacity: 0.5;
+  }
+
+  @media screen and (min-width: 745px) {
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 3rem 1rem;
+
+    &::before {
+      content: "";
+      height: 1px;
+      width: 25%;
+      background-color: var(--p-blue);
+      opacity: 0.5;
+      margin-right: 10px;
+    }
+    &::after {
+      width: 25%;
+    }
   }
 `;
 const SkillsSect = styled.section`
@@ -36,6 +54,11 @@ const SkillsSect = styled.section`
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-bottom: 1rem;
+
+  @media screen and (min-width: 745px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem 5rem;
+  }
 `;
 
 const SkillBox = styled.div`
@@ -56,7 +79,7 @@ const SkillBox = styled.div`
 function Skills() {
   return (
     <>
-      <Heading2>My Stack</Heading2>
+      <Heading2 id="skills">My Stack</Heading2>
       <SkillsSect>
         <SkillBox>
           <FontAwesomeIcon icon={faHtml5} />
