@@ -18,7 +18,8 @@ const ContactForm = styled.form`
   }
   input,
   input::placeholder,
-  textarea {
+  textarea,
+  textarea::placeholder {
     color: #1e4b8f;
   }
   input,
@@ -91,7 +92,17 @@ function Contact() {
           placeholder="Enter your email..."
         />
         <label htmlFor="message">Message: </label>
-        <textarea name="message" id="message" rows="8"></textarea>
+        <textarea
+          name="message"
+          id="message"
+          rows="8"
+          placeholder="Enter your message..."
+        ></textarea>
+        <input
+          type="hidden"
+          name="_next"
+          value="/public/index.html/#contact"
+        ></input>
         <button type="submit">Say Hello 👍🏾</button>
       </ContactForm>
     </>

@@ -18,7 +18,7 @@ const AboutMe = styled.article`
   }
   p {
     color: var(--p-blue);
-    font-size: 0.8em;
+    font-size: clamp(0.5em, 1.5vw, 1em);
   }
   section {
     display: flex;
