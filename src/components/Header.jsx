@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import { ContactBtn } from "./Contact";
 import { Menu } from "@styled-icons/boxicons-regular/Menu";
 import { Close } from "@styled-icons/evaicons-solid/Close";
 
@@ -23,10 +24,10 @@ const HeadNav = styled.header`
     width: 2rem;
     color: var(--text-blue);
   }
-  button {
+  button.close,
+  .mobile button {
     background-color: transparent;
     border: none;
-    padding: 0;
     cursor: pointer;
   }
   .desktop {
@@ -82,7 +83,7 @@ const HeadNav = styled.header`
     .desktop a {
       display: unset;
       padding: 0;
-      margin: 0 1.5rem;
+      margin: 0 1rem;
       opacity: 1;
       position: relative;
     }
@@ -106,6 +107,36 @@ const HeadNav = styled.header`
     .mobile,
     .close {
       display: none;
+    }
+  }
+`;
+
+const ResumeBtn = styled(ContactBtn)`
+  width: 50%;
+  margin: 1rem 25%;
+
+  &:hover,
+  &:focus {
+    border-width: 1px;
+  }
+
+  && a {
+    font-family: inherit;
+    color: inherit;
+    padding: 0;
+  }
+  @media screen and (min-width: 745px) {
+    display: inline;
+    margin: 0 0 0 1rem;
+    width: inherit;
+
+    && a {
+      margin: 0 0.5rem;
+    }
+
+    && a:hover::after,
+    a:focus::after {
+      transform: scaleX(0);
     }
   }
 `;
@@ -156,6 +187,9 @@ function Header() {
             <a href="#socials" onClick={linkClicked}>
               Social
             </a>
+            <ResumeBtn>
+              <a href="#">Resume</a>
+            </ResumeBtn>
           </div>
         </nav>
       </HeadNav>

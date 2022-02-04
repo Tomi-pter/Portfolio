@@ -33,23 +33,6 @@ const ContactForm = styled.form`
   textarea {
     width: 70%;
   }
-  button {
-    width: 80%;
-    margin: 1rem 10%;
-    padding: 1rem 0.5rem;
-    font-family: "BJSB";
-    background-color: #0a192f;
-    color: #eff6fc;
-    border: 1px solid var(--text-blue);
-    border-radius: 0.5rem;
-    cursor: pointer;
-  }
-  button:hover,
-  button:focus {
-    border: 2px solid var(--text-blue);
-    background-color: #eff6fc;
-    color: #0a192f;
-  }
 
   @media screen and (min-width: 745px) {
     display: flex;
@@ -62,6 +45,30 @@ const ContactForm = styled.form`
     textarea {
       width: 50%;
     }
+  }
+`;
+
+const ContactBtn = styled.button`
+  width: 80%;
+  margin: 1rem 10%;
+  padding: 1rem 0.5rem;
+  font-family: "BJSB";
+  background-color: #0a192f;
+  color: #eff6fc;
+  border: 1px solid var(--text-blue);
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1.5px solid var(--text-blue);
+    background-color: #eff6fc;
+    color: #0a192f;
+  }
+
+  @media screen and (min-width: 745px) {
+    width: 50%;
+    margin: 1rem 0;
   }
 `;
 
@@ -103,10 +110,11 @@ function Contact() {
           name="_next"
           value="/public/index.html/#contact"
         ></input>
-        <button type="submit">Say Hello 👍🏾</button>
+        <ContactBtn type="submit">Say Hello 👍🏾</ContactBtn>
       </ContactForm>
     </>
   );
 }
 
 export default Contact;
+export { ContactBtn };
