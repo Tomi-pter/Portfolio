@@ -192,7 +192,7 @@ function Header() {
             </a>
             <ResumeBtn>
               <a href={Resume} download>
-                Resumé
+                Download Resumé
               </a>
             </ResumeBtn>
           </div>
