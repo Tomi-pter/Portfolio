@@ -135,7 +135,9 @@ const ResumeBtn = styled(ContactBtn)`
     }
 
     && a:hover::after,
-    a:focus::after {
+    && a:focus::after,
+    && a:active::after,
+    && a:visited::after {
       transform: scaleX(0);
     }
   }
@@ -188,7 +190,9 @@ function Header() {
               Social
             </a>
             <ResumeBtn>
-              <a href="../Resume/tomi_resume.pdf">Resumé</a>
+              <a href="./tomi_resume.pdf" download>
+                Resumé
+              </a>
             </ResumeBtn>
           </div>
         </nav>

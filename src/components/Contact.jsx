@@ -105,11 +105,7 @@ function Contact() {
           rows="8"
           placeholder="Enter your message..."
         ></textarea>
-        <input
-          type="hidden"
-          name="_next"
-          value="/public/index.html/#contact"
-        ></input>
+        <input type="hidden" name="_next" value="tomipter.com/#contact"></input>
         <ContactBtn type="submit">Say Hello 👍🏾</ContactBtn>
       </ContactForm>
     </>
