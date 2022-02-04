@@ -90,6 +90,7 @@ function Contact() {
           name="name"
           id="name"
           placeholder="What's your name..."
+          required
         />
         <label htmlFor="email">Email: </label>
         <input
@@ -97,6 +98,7 @@ function Contact() {
           name="email"
           id="email"
           placeholder="Enter your email..."
+          required
         />
         <label htmlFor="message">Message: </label>
         <textarea
@@ -104,6 +106,7 @@ function Contact() {
           id="message"
           rows="8"
           placeholder="Enter your message..."
+          required
         ></textarea>
         <input type="hidden" name="_next" value="tomipter.com/#contact"></input>
         <ContactBtn type="submit">Say Hello 👍🏾</ContactBtn>
