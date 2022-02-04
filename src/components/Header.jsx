@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import Resume from "../Resume/tomi_resume.pdf";
 import { ContactBtn } from "./Contact";
 import { Menu } from "@styled-icons/boxicons-regular/Menu";
 import { Close } from "@styled-icons/evaicons-solid/Close";
@@ -190,7 +191,7 @@ function Header() {
               Social
             </a>
             <ResumeBtn>
-              <a href="./tomi_resume.pdf" download>
+              <a href={Resume} download>
                 Resumé
               </a>
             </ResumeBtn>
