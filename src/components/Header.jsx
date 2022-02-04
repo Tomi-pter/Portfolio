@@ -188,7 +188,7 @@ function Header() {
               Social
             </a>
             <ResumeBtn>
-              <a href="#">Resume</a>
+              <a href="#">Resumé</a>
             </ResumeBtn>
           </div>
         </nav>
