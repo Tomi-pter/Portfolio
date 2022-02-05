@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Heading2 } from "./Skills";
 import styled from "styled-components";
 
@@ -14,7 +15,7 @@ const ContactForm = styled.form`
   }
   input {
     font-family: "BJR";
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
   }
   input,
   input::placeholder,
@@ -32,6 +33,12 @@ const ContactForm = styled.form`
   }
   textarea {
     width: 70%;
+    margin-bottom: 1rem;
+  }
+  span {
+    color: red;
+    display: block;
+    margin: 0 0 0.5rem;
   }
 
   @media screen and (min-width: 745px) {
@@ -73,6 +80,50 @@ const ContactBtn = styled.button`
 `;
 
 function Contact() {
+  const [errors, setErrors] = useState("");
+  const [mailError, setMailError] = useState("");
+  const [msgError, setMsgError] = useState("");
+
+  const validateName = (e) => {
+    if (e.target.value?.length < 2) {
+      setErrors("Please input your name");
+      return false;
+    } else {
+      setErrors("");
+      console.log(e.target.value);
+      return true;
+    }
+  };
+  const validateText = (e) => {
+    if (e.target.value?.length < 4) {
+      setMsgError("Please input your message");
+      return false;
+    } else {
+      setMsgError("");
+      console.log(e.target.value);
+      return true;
+    }
+  };
+
+  const validateMail = (e) => {
+    if (e.target.validity.typeMismatch) {
+      setMailError("Please provide a valid email");
+      return false;
+    } else if (e.target.value?.length === 0) {
+      setMailError("Please input your email");
+      return false;
+    } else {
+      setMailError("");
+      return true;
+    }
+  };
+
+  const submit = (e) => {
+    if (!validateMail() || !validateText() || !validateName()) {
+      e.preventDefault();
+    }
+  };
+
   return (
     <>
       <Heading2 id="contact">Get in touch</Heading2>
@@ -81,8 +132,8 @@ function Contact() {
         method="POST"
       >
         <p>
-          Got a job for me, or a question, or you just want to say hi? My inbox
-          is always open.
+          Got a job for me, or a question, or you just want to say hi? You could
+          be my first employer. My inbox is always open.
         </p>
         <label htmlFor="name">Name: </label>
         <input
@@ -91,7 +142,9 @@ function Contact() {
           id="name"
           placeholder="What's your name..."
           required
+          onBlur={validateName}
         />
+        <span className="nameSpan">{errors}</span>
         <label htmlFor="email">Email: </label>
         <input
           type="email"
@@ -99,7 +152,9 @@ function Contact() {
           id="email"
           placeholder="Enter your email..."
           required
+          onBlur={validateMail}
         />
+        <span className="emailSpan">{mailError}</span>
         <label htmlFor="message">Message: </label>
         <textarea
           name="message"
@@ -107,9 +162,17 @@ function Contact() {
           rows="8"
           placeholder="Enter your message..."
           required
+          onBlur={validateText}
         ></textarea>
-        <input type="hidden" name="_next" value="tomipter.com/#contact"></input>
-        <ContactBtn type="submit">Say Hello 👍🏾</ContactBtn>
+        <span className="textASpan">{msgError}</span>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://tomipter.com/#contact"
+        ></input>
+        <ContactBtn type="submit" onClick={submit}>
+          Say Hello 👍🏾
+        </ContactBtn>
       </ContactForm>
     </>
   );
