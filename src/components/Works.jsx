@@ -5,8 +5,8 @@ import { Github } from "@styled-icons/feather/Github";
 import Rockps from "../images/rock-paper/rock-paper.png";
 import Sneaker from "../images/sneakers/sneakers.png";
 import Room from "../images/room-home/room-home.png";
-import Fylo from "../images/fylo-landing/fylo-landing.png";
-import Clip from "../images/clipboard-landing/clipboard-landing.png";
+import Fylo from "../images/fylo-landing/fylo-landing.jpg";
+import Clip from "../images/clipboard-landing/clipboard-landing.jpg";
 
 const WorkSect = styled.section`
   padding: 0.25rem 1.5rem;
