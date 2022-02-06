@@ -132,8 +132,8 @@ function Contact() {
         method="POST"
       >
         <p>
-          Got a job for me, or a question, or you just want to say hi? You could
-          be my first employer. My inbox is always open.
+          Got a job for me, or a question, or you just want to say hi? My inbox
+          is always open.
         </p>
         <label htmlFor="name">Name: </label>
         <input
