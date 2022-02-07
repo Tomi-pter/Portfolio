@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const ContactForm = styled.form`
   font-family: "BJR";
+  font-size: 1.2em;
   padding: 0 1.5rem 1rem;
 
   p {
@@ -15,7 +16,7 @@ const ContactForm = styled.form`
   }
   input {
     font-family: "BJR";
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   input,
   input::placeholder,

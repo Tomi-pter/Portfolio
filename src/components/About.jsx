@@ -3,22 +3,21 @@ import styled from "styled-components/macro";
 const AboutMe = styled.article`
   text-align: center;
   font-family: "BJR";
-  font-size: clamp(1.2rem, 3vw, 1.7rem);
   padding: 1.5rem 1.5rem;
 
   h1 {
-    font-size: clamp(2em, 6vw, 2.6em);
+    font-size: clamp(2.2em, 6.5vw, 2.7em);
     font-family: "BJB";
     margin: 0.5rem 0;
     color: var(--p-blue);
   }
   h2 {
-    font-size: clamp(1.4rem, 5vw, 2.2rem);
+    font-size: clamp(1.5rem, 5.5vw, 2.3rem);
     margin-bottom: 0.5rem;
   }
   p {
     color: var(--p-blue);
-    font-size: clamp(0.5em, 1.5vw, 1em);
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
   }
   section {
     display: flex;

@@ -10,6 +10,7 @@ import Clip from "../images/clipboard-landing/clipboard-landing.jpg";
 
 const WorkSect = styled.section`
   padding: 0.25rem 1.5rem;
+  font-size: 1.1em;
 
   p {
     font-family: "BJR";
