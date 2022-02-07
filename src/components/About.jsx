@@ -6,7 +6,7 @@ const AboutMe = styled.article`
   padding: 1.5rem 1.5rem;
 
   h1 {
-    font-size: clamp(2.2em, 6.5vw, 2.7em);
+    font-size: clamp(2.4em, 8vw, 3.2em);
     font-family: "BJB";
     margin: 0.5rem 0;
     color: var(--p-blue);
@@ -46,7 +46,7 @@ function About() {
   return (
     <AboutMe id="about">
       <h2>Hi, my name is</h2>
-      <h1>Tomi Aiyeniko.</h1>
+      <h1>Tomi Peter Aiyeniko.</h1>
       <h2>I'm a frontend developer.</h2>
       <p>
         I enjoy bringing web designs to life in accessible and responsive ways.
