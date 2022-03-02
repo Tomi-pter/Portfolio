@@ -7,6 +7,7 @@ import Sneaker from "../images/sneakers/sneakers.png";
 import Room from "../images/room-home/room-home.png";
 import Fylo from "../images/fylo-landing/fylo-landing.jpg";
 import Clip from "../images/clipboard-landing/clipboard-landing.jpg";
+import Rest from "../images/rest-countries/rest.jpg";
 
 const WorkSect = styled.section`
   padding: 0.25rem 1.5rem;
@@ -102,6 +103,32 @@ function Works() {
     <>
       <Heading2 id="projects">My Work</Heading2>
       <WorkSect>
+        <WorkShow>
+          <a href="https://tomi-know-your-countries.netlify.app/">
+            <img src={Rest} alt="Rock, paper, scissors page screenshot" />
+          </a>
+          <div>
+            <h3>REST Countries App</h3>
+            <p>
+              A site that consumes the REST countries v3 api to pull country
+              data and display it. It also features an option to toggle between
+              light and dark mode.
+            </p>
+            <Used>REACT</Used>
+            <Used>TAILWIND-CSS</Used>
+            <Used>REACT ROUTER</Used>
+            <br />
+            <Link
+              as="a"
+              href="https://github.com/Tomi-pter/REST-countries-app.git"
+            >
+              <Github />{" "}
+            </Link>
+            <Link as="a" href="https://tomi-know-your-countries.netlify.app/">
+              <Web />{" "}
+            </Link>
+          </div>
+        </WorkShow>
         <WorkShow>
           <a href="https://tomi-rockps.netlify.app/">
             <img src={Rockps} alt="Rock, paper, scissors page screenshot" />
