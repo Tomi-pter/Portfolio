@@ -9,6 +9,7 @@ import { TailwindCss } from "@styled-icons/boxicons-logos/TailwindCss";
 import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents";
 import { Redux } from "@styled-icons/boxicons-logos/Redux";
 import { Typescript } from "@styled-icons/simple-icons/Typescript";
+import { Graphql } from "@styled-icons/simple-icons/Graphql";
 
 const Heading2 = styled.h2`
   font-size: clamp(26px, 5vw, 32px);
@@ -113,6 +114,10 @@ function Skills() {
           <Styledcomponents />
           <p>STYLED COMPONENTS</p>
         </SkillBox>
+        <SkillBox>
+          <Typescript />
+          <p>TYPESCRIPT</p>
+        </SkillBox>
       </SkillsSect>
       <Heading2>Currently Learning</Heading2>
       <SkillsSect>
@@ -121,8 +126,8 @@ function Skills() {
           <p>REDUX</p>
         </SkillBox>
         <SkillBox>
-          <Typescript />
-          <p>TYPESCRIPT</p>
+          <Graphql />
+          <p>GRAPHQL</p>
         </SkillBox>
       </SkillsSect>
     </>
