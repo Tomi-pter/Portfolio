@@ -118,13 +118,13 @@ function Skills() {
           <Typescript />
           <p>TYPESCRIPT</p>
         </SkillBox>
-      </SkillsSect>
-      <Heading2>Currently Learning</Heading2>
-      <SkillsSect>
         <SkillBox>
           <Redux />
           <p>REDUX</p>
         </SkillBox>
+      </SkillsSect>
+      <Heading2>Currently Learning</Heading2>
+      <SkillsSect>
         <SkillBox>
           <Graphql />
           <p>GRAPHQL</p>
