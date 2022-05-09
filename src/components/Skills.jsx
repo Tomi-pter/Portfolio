@@ -1,15 +1,22 @@
 import styled from "styled-components/macro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import { faCss3 } from "@fortawesome/free-brands-svg-icons";
-import { faJs } from "@fortawesome/free-brands-svg-icons";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faHtml5,
+  faCss3,
+  faJs,
+  faReact,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 import { TailwindCss } from "@styled-icons/boxicons-logos/TailwindCss";
 import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents";
 import { Redux } from "@styled-icons/boxicons-logos/Redux";
 import { Typescript } from "@styled-icons/simple-icons/Typescript";
 import { Graphql } from "@styled-icons/simple-icons/Graphql";
+import { Jest } from "@styled-icons/simple-icons/Jest";
+import { Nodejs } from "@styled-icons/boxicons-logos/Nodejs";
+import { Greensock } from "@styled-icons/simple-icons/Greensock";
+import { Webpack } from "@styled-icons/simple-icons/Webpack";
+import { Vite } from "@styled-icons/simple-icons/Vite";
 
 const Heading2 = styled.h2`
   font-size: clamp(26px, 5vw, 32px);
@@ -70,14 +77,17 @@ const SkillBox = styled.div`
   border-radius: 0.5rem;
   box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.25);
   padding: 1rem 1rem 0.5rem;
+  background-color: var(--p-blue);
 
   p {
     text-transform: lowercase;
+    color: var(--dark-blue);
   }
 
   && svg {
     width: 2rem;
     height: 2rem;
+    color: var(--dark-blue);
   }
 `;
 
@@ -121,6 +131,26 @@ function Skills() {
         <SkillBox>
           <Redux />
           <p>REDUX</p>
+        </SkillBox>
+        <SkillBox>
+          <Jest />
+          <p>JEST</p>
+        </SkillBox>
+        <SkillBox>
+          <Nodejs />
+          <p>NODE.js</p>
+        </SkillBox>
+        <SkillBox>
+          <Greensock />
+          <p>GSAP</p>
+        </SkillBox>
+        <SkillBox>
+          <Webpack />
+          <p>WEBPACK</p>
+        </SkillBox>
+        <SkillBox>
+          <Vite />
+          <p>VITE</p>
         </SkillBox>
       </SkillsSect>
       <Heading2>Currently Learning</Heading2>
